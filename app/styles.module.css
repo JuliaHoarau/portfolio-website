@@ -1,0 +1,15 @@
+/* Add this style within your global styles or a <style> tag in your component */
+
+.largeScaleMushrooms{
+    transform: scale(3); /* Adjust scale as needed for mobile view */
+    transform-origin: center bottom; /* Adjust the origin of the transformation */
+    object-fit: fill;
+  }
+  
+  /* Reset the scale for larger screens */
+  @media (min-width: 1024px) { /* This corresponds to Tailwind's 'lg' breakpoint */
+    .largeScaleMushrooms {
+      transform: scale(1);
+    }
+  }
+  
