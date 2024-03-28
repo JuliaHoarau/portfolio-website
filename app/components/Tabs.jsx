@@ -22,7 +22,7 @@ const Tabs = () => {
     visible: { 
       scale: 1, 
       opacity: 1,
-      transition: { duration: 0.8 } // Adjust duration as needed
+      transition: { duration: 1 } // Adjust duration as needed
     }
   };
 

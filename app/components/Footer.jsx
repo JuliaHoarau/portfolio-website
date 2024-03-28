@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-      <footer className='bg-purple-600 text-white py-4 mt-4'>
-        <div className='container mx-auto'>
-          <p>&copy; {new Date().getFullYear()} Daisy UI Example.</p>
+      <footer className=' text-secondary'>
+        <div className='container mx-auto flex justify-center align-center mt-10 pb-5'>
+          <p>&copy;Julia Hoarau {new Date().getFullYear()} </p>
         </div>
 
       </footer>

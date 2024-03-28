@@ -3,13 +3,14 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion'; // Import Framer Motion
 import Tabs from './components/Tabs';
 import SplitText from './components/SplitText';
+import Footer from "./components/Footer";
 
 const Home = () => {
   const introText = "Hi there! I'm Julia Hoarau, an aspiring graphic designer and web developer from Brisbane, Australia.";
 
   // Direct fade-in animation control
   const initial = { y: '-10%', opacity: 0 };
-  const animate = { y: 0, opacity: 1, transition: { duration: 5 } }; // Customize the duration as needed
+  const animate = { y: 0, opacity: 1, transition: { duration: 2 } }; // Customize the duration as needed
 
 
   const [showGif, setShowGif] = useState(false); // State to control the display of the GIF
@@ -17,7 +18,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowGif(true); // Show the GIF after a delay
-    }, 2500); // Adjust the time based on your animations + desired delay
+    }, 3000); // Adjust the time based on your animations + desired delay
 
     return () => clearTimeout(timer); // Cleanup the timer
   }, []);
@@ -50,11 +51,11 @@ const Home = () => {
         
           <SplitText
             text={introText}
-            className="leading-sm md:leading-normal font-jost text-center items-center justify-center font-medium text-2xl xl:p-5 xl:p-10 text-secondary md:text-5xl w-full lg:w-2/3"
+            className="md:leading-snug font-jost text-center items-center justify-center font-medium text-2xl xl:p-5 xl:p-10 text-secondary md:text-4xl w-full lg:w-2/3"
            />
-           <div className="mt-5 w-44 h-44 md:h-44 flex items-center justify-center" style={{ minHeight: '100px' }}>
+           <div className="mt-5 w-35 h-35 flex items-center justify-center" style={{ minHeight: '100px' }}>
                       {showGif && (
-            <motion.img src="/images/down-arrow.gif" alt="Scroll Down" className="lg:w-44 md:w-30 w-20"
+            <motion.img src="/images/down-arrow.gif" alt="Scroll Down" className="lg:w-36 md:w-30 w-20"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }} // This controls the fade-in of the GIF itself
@@ -70,6 +71,7 @@ const Home = () => {
       <div>
         <Tabs />
       </div>
+      <Footer /> 
     </div>
   );
 };
