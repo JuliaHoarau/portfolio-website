@@ -51,7 +51,7 @@ const Tabs = () => {
         </motion.h2>
         {/* Apply animation to the image */}
         <motion.div 
-          className='w-2/3 md:w-1/5 xl:w-1/6 my-8 object-cover'
+          className='w-2/3 md:w-1/4 xl:w-1/6 my-8 object-cover'
           variants={imageVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
