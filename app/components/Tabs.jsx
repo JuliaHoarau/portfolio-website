@@ -46,7 +46,7 @@ const Tabs = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: isInView ? 1 : 0 }} // Trigger animation based on in-view status
           transition={{ duration: 1 }} // Customize the duration as needed
-          className="text-3xl lg:text-5xl text-center font-jost font-medium text-secondary lg:mb-3 lg:mt-8">
+          className="text-2xl lg:text-4xl text-center font-jost font-medium text-secondary lg:mb-3 lg:mt-8">
           MY WORK
         </motion.h2>
         {/* Apply animation to the image */}

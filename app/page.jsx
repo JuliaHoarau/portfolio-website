@@ -51,7 +51,7 @@ const Home = () => {
         
           <SplitText
             text={introText}
-            className="md:leading-snug font-jost text-center items-center justify-center font-medium text-2xl xl:p-5 xl:p-10 text-secondary md:text-4xl w-full lg:w-2/3"
+            className="md:leading-snug font-jost text-center items-center justify-center font-medium text-2xl xl:p-5 xl:p-10 text-secondary md:text-3xl w-full lg:w-2/3"
            />
            <div className="mt-5 w-35 h-35 flex items-center justify-center" style={{ minHeight: '100px' }}>
                       {showGif && (
