@@ -4,15 +4,18 @@ const Header = () => {
   return (
     <header className="absolute top-0 left-0 w-full z-10 bg-transparent mb-3">   
     <div className="container mx-auto">
-        <div className="flex xl:justify-between justify-between lg:p-8 p-10">
+        <div className="flex xl:justify-center justify-center lg:p-8 p-10">
             <Link href="/">
+              <div>
+                <img src="" alt="" />
+              </div>
+              <div>
                 <h1 className="text-2xl font-bold">DaisyUI Example</h1>
+                </div> 
+                <div>
+                <img src="" alt="" />
+              </div>
             </Link>
-            <ul className="flex justify-end items-center font-bold space-x-5 tracking-wide">
-                <li>
-                    <Link href="/contact">Contact</Link>
-                </li>
-            </ul>
         </div>
     </div>
     </header>

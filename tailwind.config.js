@@ -7,18 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        jost: ["Jost", "sans-serif"],
+      },
       colors: {
         primary: "#ede6db", // Can always use CSS variables too e.g. "var(--color-primary)",
-        secondary: "#333333",
-        brand: "#243c5a",
+        secondary: "#8e3a2f",
+        brand: "#b5815e",
     },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'hero-pattern': "url('/images/mobile-background-01.png')"
       },
       boxShadow: {
         'deep': '0px 0px 7px 1px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.25)',
+      },
+
+      backgroundSize: {
+        '80%': '80%',
       },
     },
   },

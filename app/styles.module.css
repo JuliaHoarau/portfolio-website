@@ -1,5 +1,6 @@
 /* Add this style within your global styles or a <style> tag in your component */
 
+
 .largeScaleMushrooms{
     transform: scale(3); /* Adjust scale as needed for mobile view */
     transform-origin: center bottom; /* Adjust the origin of the transformation */
