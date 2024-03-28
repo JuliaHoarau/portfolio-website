@@ -63,7 +63,7 @@ const Tabs = () => {
         {tabs.map((tab) => (
           <li
             key={tab.id}
-            className={`tab text-sm text-brand text-base lg:text-2xl cursor-pointer relative flex justify-center ${activeTab === tab.id ? 'text-secondary' : ''}`} // Corrected `!important` misuse
+            className={`tab text-sm text-brand text-base lg:text-lg cursor-pointer relative flex justify-center ${activeTab === tab.id ? 'text-secondary' : ''}`} // Corrected `!important` misuse
             onClick={() => setActiveTab(tab.id)}
           >
             {tab.title}
