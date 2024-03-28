@@ -27,17 +27,17 @@ const Home = () => {
     <div className="bg-primary">
       <div className="relative h-screen flex grid grid-cols-3 grid-rows-3">
         {/* Apply the fade-in animation directly to each motion.div */}
-        <motion.div className="hidden xl:flex col-start-1 row-start-1 w-full h-full flex justify-start items-start m-1"
+        <motion.div className="hidden lg:flex col-start-1 row-start-1 w-full h-full flex justify-start items-start m-1"
                      initial={initial} animate={animate}>
           <img src="/images/top-left.png" alt="Top Left" className="object-fit w-full xl:w-3/5"/>
         </motion.div>
 
-        <motion.div className="lg:flex col-start-2 xl:col-span-1 xl:col-start-3 col-span-2 xl:row-start-1 row-start-1 flex justify-end items-start m-1"
+        <motion.div className="md:flex col-start-2 md:col-span-1 md:col-start-3 col-span-2 lg:row-start-1 row-start-1 flex justify-end items-start m-1"
                      initial={initial} animate={animate}>
           <img src="/images/top-right.png" alt="Top Right" className="object-fit w-3/4 xl:w-3/5"/>
         </motion.div>
 
-        <motion.div className="col-span-2 xl:flex xl:col-span-1 xl:col-start-1 row-start-3 flex justify-start items-end m-1"
+        <motion.div className="col-span-2 md:flex md:col-span-1 md:col-start-1 row-start-3 flex justify-start items-end m-1"
                      initial={initial} animate={animate}>
           <img src="/images/bottom-left.png" alt="Bottom Left" className="object-fit w-3/4 xl:w-3/5"/>
         </motion.div>
