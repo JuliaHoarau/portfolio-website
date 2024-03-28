@@ -12,7 +12,7 @@ const LogoGallery = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10  p-5 lg:p-10 my-5 lg:mx-3 text-primary">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 p-10 mx-3 text-primary">
       {logos.map((logo, index) => (
         <div key={index} className="shadow-lg rounded-lg">
           <img src={logo} alt={`Logo ${index + 1}`} className="object-cover w-full h-full" />

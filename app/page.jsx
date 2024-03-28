@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion'; // Import Framer Motion
 import Tabs from './components/Tabs';
 import SplitText from './components/SplitText';
@@ -9,7 +9,18 @@ const Home = () => {
 
   // Direct fade-in animation control
   const initial = { y: '-10%', opacity: 0 };
-  const animate = { y: 0, opacity: 1, transition: { duration: 2 } }; // Customize the duration as needed
+  const animate = { y: 0, opacity: 1, transition: { duration: 5 } }; // Customize the duration as needed
+
+
+  const [showGif, setShowGif] = useState(false); // State to control the display of the GIF
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowGif(true); // Show the GIF after a delay
+    }, 3100); // Adjust the time based on your animations + desired delay
+
+    return () => clearTimeout(timer); // Cleanup the timer
+  }, []);
 
   return (
     <div className="bg-primary">
@@ -35,12 +46,25 @@ const Home = () => {
           <img src="/images/bottom-right.png" alt="Bottom Right" className="object-fit w-full xl:w-3/5"/>
         </motion.div>
 
-        <div className="col-span-3 row-start-2 flex items-center justify-center p-10">
+        <div className="col-span-3 row-start-2 flex flex-col items-center justify-center p-10 z-10">
+        
           <SplitText
             text={introText}
-            className="leading-sm lg:leading-normal font-jost text-center font-medium text-3xl xl:p-5 xl:p-10 text-secondary lg:text-5xl w-full lg:w-2/3"
-          />
-        </div>
+            className="leading-sm md:leading-normal font-jost text-center items-center justify-center font-medium text-2xl xl:p-5 xl:p-10 text-secondary md:text-5xl w-full lg:w-2/3"
+           />
+           <div className="mt-5 w-44 h-44 md:h-44 flex items-center justify-center" style={{ minHeight: '100px' }}>
+                      {showGif && (
+            <motion.img src="/images/down-arrow.gif" alt="Scroll Down" className="lg:w-44 md:w-30 w-20"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }} // This controls the fade-in of the GIF itself
+            />
+          )}
+          </div>
+           </div>
+
+
+        
       </div>
 
       <div>
