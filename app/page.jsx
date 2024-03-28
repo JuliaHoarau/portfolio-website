@@ -18,7 +18,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowGif(true); // Show the GIF after a delay
-    }, 3000); // Adjust the time based on your animations + desired delay
+    }, 2600); // Adjust the time based on your animations + desired delay
 
     return () => clearTimeout(timer); // Cleanup the timer
   }, []);
