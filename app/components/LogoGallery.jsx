@@ -2,11 +2,15 @@
 const LogoGallery = () => {
   // List of logo images (replace these with your actual logo paths)
   const logos = [
+    '/'
+    '/logos/scrapps-black-stars.png',
     '/logos/ml-strength-logo.png',
+    '/logos/agencytwelvehundred.png'
     '/logos/abcopticallogo.png',
     '/logos/expedition-logo.png',
     '/logos/bnz-logo.jpg',
     '/logos/petals-logo.png',
+
 
     // Add more logos as needed
   ];
