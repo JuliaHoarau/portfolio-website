@@ -4,7 +4,7 @@ const LogoGallery = () => {
   const logos = [
     '/logos/scrapps-black-stars.png',
     '/logos/ml-strength-logo.png',
-    '/logos/agencytwelvehundred.png',
+    '/logos/agencytwelvehundred-01.png',
     '/logos/abcopticallogo.png',
     '/logos/expedition-logo.png',
     '/logos/bnz-logo.jpg',
