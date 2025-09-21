@@ -1,6 +1,6 @@
 'use client'
 const LogoGallery = () => {
-  // List of logo images (replace these with your actual logo paths)
+  // List of logo images
   const logos = [
     '/logos/scrapps-black-stars.png',
     '/logos/ml-strength-logo.png',
@@ -8,9 +8,7 @@ const LogoGallery = () => {
     '/logos/expedition-logo.png',
     '/logos/bnz-logo.jpg',
     '/logos/petals-logo.png',
-    '/logos/agencytwelvehundred-01.png'
-
-    // Add more logos as needed
+    '/logos/agencytwelvhundred-01.png'
   ];
 
   return (

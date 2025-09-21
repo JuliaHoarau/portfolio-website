@@ -1,6 +1,6 @@
 'use client'
 const GraphicDesignGallery = () => {
-  // List of logo images (replace these with your actual logo paths)
+  // List of logo images
   const graphics = [
     '/graphicdesign/beezee-flyer-01.png',
     '/graphicdesign/clove-honey.jpg',
@@ -10,7 +10,6 @@ const GraphicDesignGallery = () => {
     '/graphicdesign/shadows-book-cover.png',
     '/graphicdesign/stardust-cover.png',
     '/graphicdesign/edna-space-01.png',
-    // Add more logos as needed
   ];
 
   return (
